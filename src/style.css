@@ -95,7 +95,7 @@ h3 {
 
 @media (max-width: 768px) {
   main {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   table {
