@@ -30,18 +30,20 @@ main {
   margin-right: 2rem;
 }
 
-ul {
-  border: 2px solid black;
+table {
   margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.names-score-list-container li {
-  list-style-type: none;
-  margin-bottom: 0.5rem;
+td,
+th {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 0.2rem;
 }
 
-.names-score-list-container li:nth-child(even) {
-  background-color: rgb(206, 206, 201);
+tr:nth-child(even) {
+  background-color: rgb(221, 221, 221);
 }
 
 form {
