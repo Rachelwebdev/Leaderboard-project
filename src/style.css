@@ -5,14 +5,16 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 100vh;
 }
 
 .header-title {
-  margin: 2rem 2rem 0;
-  font-size: 2rem;
+  padding: 2rem;
+  font-size: 3rem;
+  color: rgb(33, 32, 33);
+  box-shadow: 5px 15px 10px 0 rgb(236, 200, 220);
 }
 
 main {
@@ -28,17 +30,18 @@ main {
 
 .score-title {
   margin-right: 2rem;
+  color: rgb(229, 19, 134);
 }
 
 table {
   margin-top: 1rem;
-  border-collapse: collapse;
   width: 100%;
+  border-radius: 5px;
 }
 
 td,
 th {
-  border: 1px solid rgb(221, 221, 221);
+  border: 2px solid rgb(201, 194, 202);
   padding: 0.2rem;
 }
 
@@ -59,13 +62,60 @@ form {
 input,
 button {
   padding: 0.5rem;
+  border: 2px solid rgb(201, 194, 202);
+}
+
+button {
+  background-color: rgb(255, 254, 255);
+  cursor: pointer;
+  transition: 800ms ease-in-out;
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+input {
+  outline: none;
+}
+
+button:hover,
+input:focus {
+  border: 2px solid rgb(229, 19, 134);
 }
 
 h3 {
   font-size: 2rem;
+  color: rgb(229, 19, 134);
 }
 
 .alert {
-  color: red;
+  color: rgb(229, 19, 134);
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  table {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .recent-scores {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .add-score {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-title {
+    font-size: 2rem;
+  }
 }
