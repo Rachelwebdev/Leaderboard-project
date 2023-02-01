@@ -1,7 +1,6 @@
-import { result } from "lodash";
-import getUserScore from "./refresh.js";
+import getUserScore from './refresh.js';
 
-const listContainer = document.querySelector(".names-score-list-container");
+const listContainer = document.querySelector('.names-score-list-container');
 
 const renderUserScores = async () => {
   const data = await getUserScore();
@@ -11,7 +10,7 @@ const renderUserScores = async () => {
                <td>${item.user}</td>
                <td>${item.score}</td>
            </tr>`;
-    listContainer.insertAdjacentHTML("beforeend", tableData);
+    listContainer.insertAdjacentHTML('beforeend', tableData);
   });
 };
 
