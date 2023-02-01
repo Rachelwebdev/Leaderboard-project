@@ -64,3 +64,8 @@ button {
 h3 {
   font-size: 2rem;
 }
+
+.alert {
+  color: red;
+  font-size: 1.2rem;
+}
