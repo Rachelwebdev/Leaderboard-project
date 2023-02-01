@@ -16,7 +16,6 @@ body {
 }
 
 main {
-  width: 50%;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -31,15 +30,20 @@ main {
   margin-right: 2rem;
 }
 
-ul {
-  border: 2px solid black;
+table {
   margin-top: 1rem;
-  padding: 1rem;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.names-score-list-container li {
-  list-style-type: none;
-  margin-bottom: 1.3rem;
+td,
+th {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 0.2rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(221, 221, 221);
 }
 
 form {
@@ -59,4 +63,9 @@ button {
 
 h3 {
   font-size: 2rem;
+}
+
+.alert {
+  color: red;
+  font-size: 1.2rem;
 }
