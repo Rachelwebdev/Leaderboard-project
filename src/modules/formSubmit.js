@@ -1,5 +1,4 @@
-// ("https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QTfdB0h9KWr1chJOORpg/scores/");
-const getUserScore = async () => {
+const postUserScore = async () => {
   const nameInputValue = document.querySelector("#name").value;
   const scoreInputValue = document.querySelector("#score").value;
   if (!nameInputValue && !scoreInputValue) {
@@ -19,8 +18,8 @@ const getUserScore = async () => {
       },
     }
   );
-  const data = await response.json();
-  console.log(data);
+  const scoreDataPosted = await response.json();
+  return scoreDataPosted;
 };
 
-export default getUserScore;
+export default postUserScore;

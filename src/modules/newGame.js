@@ -13,8 +13,8 @@ const newGame = async () => {
       },
     }
   );
-  const result = await response.json();
-  console.log(result);
+  const resultId = await response.json();
+  return resultId;
 };
 
 export default newGame;
